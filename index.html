@@ -1,1 +1,40 @@
-<h1>giao哥神了</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>结局判定</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+body{background:#111;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;}
+h1{font-size:32px;margin-bottom:60px;text-align:center;}
+.box{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;}
+button{padding:16px 36px;font-size:22px;border-radius:12px;border:none;cursor:pointer;}
+#btnA{background:#2385ff;color:white;}
+#btnB{background:#ff4455;color:white;}
+.result{margin-top:50px;font-size:44px;font-weight:bold;text-align:center;}
+</style>
+</head>
+<body>
+<h1>老K结局判定</h1>
+<div class="box">
+    <button id="btnA">死马</button>
+    <button id="btnB">不死马</button>
+</div>
+<div class="result" id="res"></div>
+
+<script>
+const btnA = document.getElementById('btnA');
+const btnB = document.getElementById('btnB');
+const res = document.getElementById('res');
+
+btnA.onclick = ()=>{
+    res.innerText = "👍";
+}
+
+btnB.onclick = ()=>{
+    res.innerText = "傻逼！";
+}
+</script>
+</body>
+</html>
